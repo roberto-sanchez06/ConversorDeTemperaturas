@@ -8,29 +8,34 @@ namespace Infraestructure
 {
     public class TemperaturaRepository : ITemperaturaRepository
     {
-        private List<Temperatura> temperaturas;
+        private List<TemperaturaConversion> temperaturas;
         public TemperaturaRepository()
         {
-            temperaturas = new List<Temperatura>();
+            temperaturas = new List<TemperaturaConversion>();
         }
-        public void Create(Temperatura temp)
+        public void Create(TemperaturaConversion temp)
         {
             throw new NotImplementedException();
         }
 
-        public ICollection<Temperatura> FindAll()
+        public ICollection<TemperaturaConversion> FindAll()
         {
             throw new NotImplementedException();
         }
 
-        public ICollection<Temperatura> FindAll(Predicate<Temperatura> predicate)
+        public ICollection<TemperaturaConversion> FindAll(Predicate<TemperaturaConversion> predicate)
         {
             throw new NotImplementedException();
         }
 
-        public Temperatura FindAny(Predicate<Temperatura> predicate)
+        public TemperaturaConversion FindAny(Predicate<TemperaturaConversion> predicate)
         {
             throw new NotImplementedException();
+        }
+
+        public int GetLastId()
+        {
+            return temperaturas.Count;
         }
     }
 }

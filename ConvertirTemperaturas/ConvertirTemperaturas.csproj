@@ -71,6 +71,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmHistorialTemperaturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHistorialTemperaturas.Designer.cs">
+      <DependentUpon>FrmHistorialTemperaturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTemperaturas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmHistorialTemperaturas.resx">
+      <DependentUpon>FrmHistorialTemperaturas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTemperaturas.resx">
       <DependentUpon>FrmTemperaturas.cs</DependentUpon>
     </EmbeddedResource>

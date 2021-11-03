@@ -23,7 +23,13 @@ namespace ConvertirTemperaturas
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            cmbUniTemp.Items.AddRange(Enum.GetValues(typeof(UnidadTemperatura)).Cast<object>().ToArray());
+            cmbUniTempOrigin.Items.AddRange(Enum.GetValues(typeof(UnidadTemperatura)).Cast<object>().ToArray());
+            cmbUniTempConver.Items.AddRange(Enum.GetValues(typeof(UnidadTemperatura)).Cast<object>().ToArray());
+        }
+
+        private void btnConvertir_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

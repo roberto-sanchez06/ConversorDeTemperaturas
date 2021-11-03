@@ -7,9 +7,10 @@ namespace AppCore.Interfaces
 {
     public interface ITemperaturaService
     {
-        void Create(Temperatura temp);
-        ICollection<Temperatura> FindAll();
-        ICollection<Temperatura> FindAll(Predicate<Temperatura> predicate);
-        Temperatura FindAny(Predicate<Temperatura> predicate);
+        int GetLastId();
+        void Create(TemperaturaConversion temp);
+        ICollection<TemperaturaConversion> FindAll();
+        ICollection<TemperaturaConversion> FindAll(Predicate<TemperaturaConversion> predicate);
+        TemperaturaConversion FindAny(Predicate<TemperaturaConversion> predicate);
     }
 }

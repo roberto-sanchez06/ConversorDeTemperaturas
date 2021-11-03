@@ -32,3 +32,4 @@ C:\Users\Roberto\source\repos\ConvertirTemperaturas\ConvertirTemperaturas\obj\De
 C:\Users\Roberto\source\repos\ConvertirTemperaturas\ConvertirTemperaturas\obj\Debug\ConvertirTemperaturas.csproj.CopyComplete
 C:\Users\Roberto\source\repos\ConvertirTemperaturas\ConvertirTemperaturas\obj\Debug\ConvertirTemperaturas.exe
 C:\Users\Roberto\source\repos\ConvertirTemperaturas\ConvertirTemperaturas\obj\Debug\ConvertirTemperaturas.pdb
+C:\Users\Roberto\source\repos\ConvertirTemperaturas\ConvertirTemperaturas\obj\Debug\ConvertirTemperaturas.FrmHistorialTemperaturas.resources
