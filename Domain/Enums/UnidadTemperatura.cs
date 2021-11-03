@@ -10,4 +10,19 @@ namespace Domain.Enums
         Fahrenheit,
         Kelvin
     }
+    public enum ElegirCelsius
+    {
+        Fahrenheit,
+        Kelvin
+    }
+    public enum ElegirFarenheit
+    {
+        Celsius,
+        Kelvin
+    }
+    public enum ElegirKelvin
+    {
+        Celsius,
+        Fahrenheit
+    }
 }

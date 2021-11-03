@@ -15,22 +15,27 @@ namespace Infraestructure
         }
         public void Create(TemperaturaConversion temp)
         {
-            throw new NotImplementedException();
+            if (temp is null)
+            {
+                throw new ArgumentNullException(nameof(temp));
+            }
+
+            temperaturas.Add(temp);
         }
 
         public ICollection<TemperaturaConversion> FindAll()
         {
-            throw new NotImplementedException();
+            return temperaturas;
         }
 
         public ICollection<TemperaturaConversion> FindAll(Predicate<TemperaturaConversion> predicate)
         {
-            throw new NotImplementedException();
+            return temperaturas.FindAll(predicate);
         }
 
         public TemperaturaConversion FindAny(Predicate<TemperaturaConversion> predicate)
         {
-            throw new NotImplementedException();
+            return temperaturas.Find(predicate);
         }
 
         public int GetLastId()

@@ -29,43 +29,37 @@ namespace ConvertirTemperaturas
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtGradosOrigen = new System.Windows.Forms.TextBox();
             this.cmbUniTempOrigin = new System.Windows.Forms.ComboBox();
             this.btnConvertir = new System.Windows.Forms.Button();
             this.cmbUniTempConver = new System.Windows.Forms.ComboBox();
-            this.txtGradosConvertidos = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Header = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtDe = new System.Windows.Forms.TextBox();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtGradosOrigen
-            // 
-            this.txtGradosOrigen.Location = new System.Drawing.Point(3, 51);
-            this.txtGradosOrigen.Name = "txtGradosOrigen";
-            this.txtGradosOrigen.Size = new System.Drawing.Size(214, 20);
-            this.txtGradosOrigen.TabIndex = 0;
             // 
             // cmbUniTempOrigin
             // 
             this.cmbUniTempOrigin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbUniTempOrigin.FormattingEnabled = true;
-            this.cmbUniTempOrigin.Location = new System.Drawing.Point(245, 50);
+            this.cmbUniTempOrigin.Location = new System.Drawing.Point(380, 168);
             this.cmbUniTempOrigin.Name = "cmbUniTempOrigin";
             this.cmbUniTempOrigin.Size = new System.Drawing.Size(230, 21);
             this.cmbUniTempOrigin.TabIndex = 1;
             // 
             // btnConvertir
             // 
-            this.btnConvertir.Location = new System.Drawing.Point(517, 49);
+            this.btnConvertir.Location = new System.Drawing.Point(494, 289);
             this.btnConvertir.Name = "btnConvertir";
             this.btnConvertir.Size = new System.Drawing.Size(130, 23);
             this.btnConvertir.TabIndex = 2;
-            this.btnConvertir.Text = "Convetitr";
+            this.btnConvertir.Text = "Convertir";
             this.btnConvertir.UseVisualStyleBackColor = true;
             this.btnConvertir.Click += new System.EventHandler(this.btnConvertir_Click);
             // 
@@ -73,36 +67,16 @@ namespace ConvertirTemperaturas
             // 
             this.cmbUniTempConver.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbUniTempConver.FormattingEnabled = true;
-            this.cmbUniTempConver.Location = new System.Drawing.Point(245, 76);
+            this.cmbUniTempConver.Location = new System.Drawing.Point(380, 222);
             this.cmbUniTempConver.Name = "cmbUniTempConver";
             this.cmbUniTempConver.Size = new System.Drawing.Size(230, 21);
             this.cmbUniTempConver.TabIndex = 3;
             // 
-            // txtGradosConvertidos
-            // 
-            this.txtGradosConvertidos.Location = new System.Drawing.Point(3, 77);
-            this.txtGradosConvertidos.Name = "txtGradosConvertidos";
-            this.txtGradosConvertidos.Size = new System.Drawing.Size(214, 20);
-            this.txtGradosConvertidos.TabIndex = 4;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 173);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 265);
-            this.dataGridView1.TabIndex = 5;
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.txtGradosOrigen);
-            this.panel1.Controls.Add(this.txtGradosConvertidos);
-            this.panel1.Controls.Add(this.cmbUniTempOrigin);
-            this.panel1.Controls.Add(this.btnConvertir);
-            this.panel1.Controls.Add(this.cmbUniTempConver);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 111);
+            this.panel1.Size = new System.Drawing.Size(776, 95);
             this.panel1.TabIndex = 6;
             // 
             // Header
@@ -125,37 +99,84 @@ namespace ConvertirTemperaturas
             this.label1.TabIndex = 0;
             this.label1.Text = "Conversor de temperaturas";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(169, 225);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(17, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "A:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(149, 144);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Convertir de";
+            // 
+            // txtDe
+            // 
+            this.txtDe.Location = new System.Drawing.Point(254, 129);
+            this.txtDe.Name = "txtDe";
+            this.txtDe.Size = new System.Drawing.Size(100, 20);
+            this.txtDe.TabIndex = 9;
+            // 
+            // txtA
+            // 
+            this.txtA.Location = new System.Drawing.Point(254, 169);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(100, 20);
+            this.txtA.TabIndex = 10;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(81, 278);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 11;
+            // 
             // FrmTemperaturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.txtA);
+            this.Controls.Add(this.txtDe);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnConvertir);
+            this.Controls.Add(this.cmbUniTempOrigin);
+            this.Controls.Add(this.cmbUniTempConver);
             this.Controls.Add(this.Header);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "FrmTemperaturas";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtGradosOrigen;
         private System.Windows.Forms.ComboBox cmbUniTempOrigin;
         private System.Windows.Forms.Button btnConvertir;
         private System.Windows.Forms.ComboBox cmbUniTempConver;
-        private System.Windows.Forms.TextBox txtGradosConvertidos;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel Header;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtDe;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
