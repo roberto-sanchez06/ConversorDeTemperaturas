@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6iTkmheGizGwMQbAsYcs7t8GbQcP/DFdZJo3kDn0O/2N/x38OGYmTYtelnrmvfBSBCR/VLFafddN85ZRYM6Onw==",
+  "dgSpecHash": "+ocXHeyiwnbk67cgr0i0KBUP+989lANhBDkCPIoD3z8xE7TprVoWCdlaDEWAUVBYrq/PF5TKhsUwize5RWIIbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Roberto\\Desktop\\ClasePracticaTemperatuaClonado\\ConversorDeTemperaturas\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\larry\\Desktop\\final\\ConversorDeTemperaturas\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Roberto\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Roberto\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\larry\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\larry\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -29,9 +29,9 @@ namespace ConvertirTemperaturas
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtgHistorial = new System.Windows.Forms.DataGridView();
             this.lblHeader = new System.Windows.Forms.Label();
             this.pnlBarraTitulo = new System.Windows.Forms.Panel();
@@ -39,6 +39,10 @@ namespace ConvertirTemperaturas
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMaxi = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.cmbFiltroOrigen = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.BtnTodos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgHistorial)).BeginInit();
             this.pnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
@@ -55,34 +59,34 @@ namespace ConvertirTemperaturas
             this.dtgHistorial.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dtgHistorial.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtgHistorial.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgHistorial.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgHistorial.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgHistorial.ColumnHeadersHeight = 30;
             this.dtgHistorial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgHistorial.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.dtgHistorial.EnableHeadersVisualStyles = false;
             this.dtgHistorial.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dtgHistorial.Location = new System.Drawing.Point(44, 111);
+            this.dtgHistorial.Location = new System.Drawing.Point(54, 121);
             this.dtgHistorial.Name = "dtgHistorial";
             this.dtgHistorial.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgHistorial.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgHistorial.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgHistorial.RowHeadersVisible = false;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.dtgHistorial.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.dtgHistorial.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dtgHistorial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgHistorial.Size = new System.Drawing.Size(800, 318);
             this.dtgHistorial.TabIndex = 0;
@@ -94,11 +98,11 @@ namespace ConvertirTemperaturas
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHeader.AutoSize = true;
-            this.lblHeader.Font = new System.Drawing.Font("Franklin Gothic Heavy", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeader.ForeColor = System.Drawing.Color.Navy;
             this.lblHeader.Location = new System.Drawing.Point(260, 69);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(386, 26);
+            this.lblHeader.Size = new System.Drawing.Size(380, 25);
             this.lblHeader.TabIndex = 1;
             this.lblHeader.Text = "Historial de Temperaturas Convertidas";
             // 
@@ -169,12 +173,54 @@ namespace ConvertirTemperaturas
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // cmbFiltroOrigen
+            // 
+            this.cmbFiltroOrigen.FormattingEnabled = true;
+            this.cmbFiltroOrigen.Location = new System.Drawing.Point(691, 69);
+            this.cmbFiltroOrigen.Name = "cmbFiltroOrigen";
+            this.cmbFiltroOrigen.Size = new System.Drawing.Size(116, 21);
+            this.cmbFiltroOrigen.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(712, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "filtar por origen";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(813, 67);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Filtrar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // BtnTodos
+            // 
+            this.BtnTodos.Location = new System.Drawing.Point(44, 67);
+            this.BtnTodos.Name = "BtnTodos";
+            this.BtnTodos.Size = new System.Drawing.Size(132, 23);
+            this.BtnTodos.TabIndex = 6;
+            this.BtnTodos.Text = "Mostrar Todos";
+            this.BtnTodos.UseVisualStyleBackColor = true;
+            this.BtnTodos.Visible = false;
+            this.BtnTodos.Click += new System.EventHandler(this.BtnTodos_Click);
+            // 
             // FrmDemos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(891, 504);
+            this.Controls.Add(this.BtnTodos);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cmbFiltroOrigen);
             this.Controls.Add(this.pnlBarraTitulo);
             this.Controls.Add(this.lblHeader);
             this.Controls.Add(this.dtgHistorial);
@@ -203,5 +249,9 @@ namespace ConvertirTemperaturas
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnRestaurar;
         private System.Windows.Forms.PictureBox btnMini;
+        private System.Windows.Forms.ComboBox cmbFiltroOrigen;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnTodos;
     }
 }

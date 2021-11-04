@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using AppCore.Interfaces;
 using Domain.Entities;
 using System.Runtime.InteropServices;
+using Domain.Enums;
 
 namespace ConvertirTemperaturas
 {
@@ -25,6 +26,7 @@ namespace ConvertirTemperaturas
         {
             dtgHistorial.ReadOnly = true;
             dtgHistorial.DataSource = temperaturaService.FindAll();
+            cmbFiltroOrigen.Items.AddRange(Enum.GetValues(typeof(UnidadTemperatura)).Cast<object>().ToArray());
             //foreach(TemperaturaConversion temp in temperaturaService.FindAll())
             //{
             //    dtgHistorial.Rows.Add(temp.Id, temp.GradosTemperaturaOrigen,temp.UnidadTemperaturaOrigen, temp.GradosTemperaturaConvertida, temp.UnidadTemperaturaConvertida);
@@ -71,6 +73,22 @@ namespace ConvertirTemperaturas
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012,0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (cmbFiltroOrigen.SelectedIndex==-1)
+            {
+                MessageBox.Show("debe de elegir una temperatura de origen");
+                return;
+            }
+            dtgHistorial.DataSource = temperaturaService.FindAll(x=>x.UnidadTemperaturaOrigen==(UnidadTemperatura)cmbFiltroOrigen.SelectedIndex);
+            BtnTodos.Visible = true;
+        }
+
+        private void BtnTodos_Click(object sender, EventArgs e)
+        {
+            dtgHistorial.DataSource = temperaturaService.FindAll();
         }
     }
 }
