@@ -40,7 +40,7 @@ namespace Infraestructure
 
         public int GetLastId()
         {
-            return temperaturas.Count;
+            return (temperaturas.Count == 0) ? 0 : temperaturas[temperaturas.Count-1].Id; 
         }
     }
 }

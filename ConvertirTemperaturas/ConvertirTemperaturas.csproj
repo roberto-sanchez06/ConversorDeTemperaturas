@@ -150,5 +150,29 @@
   <ItemGroup>
     <None Include="Resources\minimazar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1635995394967.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\temperatura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\historial-medico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\celsius.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fahrenheit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kelvin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha-hacia-abajo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
