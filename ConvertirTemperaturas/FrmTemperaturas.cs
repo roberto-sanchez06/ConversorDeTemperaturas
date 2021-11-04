@@ -26,53 +26,87 @@ namespace ConvertirTemperaturas
         private void Form1_Load(object sender, EventArgs e)
         {
             cmbUniTempOrigin.Items.AddRange(Enum.GetValues(typeof(UnidadTemperatura)).Cast<object>().ToArray());
-
-
             cmbUniTempConver.Items.AddRange(Enum.GetValues(typeof(UnidadTemperatura)).Cast<object>().ToArray());
         }
 
         private void btnConvertir_Click(object sender, EventArgs e)
         {
-            validaciones();
-            TemperaturaConversion conversion = new TemperaturaConversion() {
-            GradosTemperaturaOrigen = decimal.Parse(txtDe.Text),
-             UnidadTemperaturaOrigen = (UnidadTemperatura)cmbUniTempOrigin.SelectedIndex,
-                UnidadTemperaturaConvertida = (UnidadTemperatura)cmbUniTempConver.SelectedIndex
-
-
-            };
-            conversion.GradosTemperaturaConvertida = FactoryTemperatura.CrearInstancia(conversion).ConvertirTemperatura(conversion.GradosTemperaturaOrigen);
-            temperaturaService.Create(conversion);
-            dataGridView1.DataSource = temperaturaService.FindAll();
+            try
+            {
+                validaciones();
+                if (!decimal.TryParse(txtDe.Text, out decimal grados))
+                {
+                    throw new ArgumentException($"El dato {txtDe.Text} que usted ingreso no es valido");
+                }
+                TemperaturaConversion conversion = new TemperaturaConversion()
+                {
+                    Id=temperaturaService.GetLastId()+1,
+                    GradosTemperaturaOrigen = grados,
+                    UnidadTemperaturaOrigen = (UnidadTemperatura)cmbUniTempOrigin.SelectedIndex,
+                    UnidadTemperaturaConvertida = (UnidadTemperatura)cmbUniTempConver.SelectedIndex
+                };
+                conversion.GradosTemperaturaConvertida = FactoryTemperatura.CrearInstancia(conversion).ConvertirTemperatura(conversion.GradosTemperaturaOrigen);
+                temperaturaService.Create(conversion);
+                List<TemperaturaConversion> temperaturaConversions = temperaturaService.FindAll().ToList();
+                dataGridView1.DataSource = temperaturaConversions;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
         }
         private void validaciones()
         {
-            if(string.IsNullOrEmpty(txtDe.Text)|| string.IsNullOrEmpty(txtA.Text) ||cmbUniTempConver.SelectedIndex==-1|| cmbUniTempOrigin.SelectedIndex == -1)
+            if(string.IsNullOrEmpty(txtDe.Text)||cmbUniTempConver.SelectedIndex==-1|| cmbUniTempOrigin.SelectedIndex == -1)
             {
-                throw new ArgumentException("Datos invalidos");
+                throw new ArgumentException("Hay campos vacios");
             }
         }
 
-        private void cmbUniTempOrigin_SelectedIndexChanged(object sender, EventArgs e)
+        private void dataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
-            switch (cmbUniTempOrigin.SelectedIndex)
-            {
-                case 0:
-                    cmbUniTempConver.Items.Clear();
-                    cmbUniTempConver.DataSource = Enum.GetValues(typeof(ElegirCelsius));
-                    //cmbUniTempConver.Items.AddRange(Enum.GetValues(typeof(ElegirCelsius)).Cast<object>().ToArray());
-                    break;
-                case 1:
-                    cmbUniTempConver.Items.Clear();
-                    cmbUniTempConver.DataSource = Enum.GetValues(typeof(ElegirFarenheit));
-                    //cmbUniTempConver.Items.AddRange(Enum.GetValues(typeof(ElegirFarenheit)).Cast<object>().ToArray());
-                    break;
-                case 2:
-                    cmbUniTempConver.Items.Clear();
-                    cmbUniTempConver.DataSource = Enum.GetValues(typeof(ElegirKelvin));
-                    //cmbUniTempConver.Items.AddRange(Enum.GetValues(typeof(ElegirKelvin)).Cast<object>().ToArray());
-                    break;
-            }
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmDemos frm = new FrmDemos();
+            frm.temperaturaService = temperaturaService;
+            frm.ShowDialog();
+        }
+
+        private void pbCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pbHistorial_Click(object sender, EventArgs e)
+        {
+            FrmDemos frm = new FrmDemos();
+            frm.temperaturaService = temperaturaService;
+            frm.ShowDialog();
+        }
+
+        //private void cmbUniTempOrigin_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    switch (cmbUniTempOrigin.SelectedIndex)
+        //    {
+        //        case 0:
+        //            cmbUniTempConver.Items.Clear();
+        //            cmbUniTempConver.DataSource = Enum.GetValues(typeof(ElegirCelsius));
+        //            //cmbUniTempConver.Items.AddRange(Enum.GetValues(typeof(ElegirCelsius)).Cast<object>().ToArray());
+        //            break;
+        //        case 1:
+        //            cmbUniTempConver.Items.Clear();
+        //            cmbUniTempConver.DataSource = Enum.GetValues(typeof(ElegirFarenheit));
+        //            //cmbUniTempConver.Items.AddRange(Enum.GetValues(typeof(ElegirFarenheit)).Cast<object>().ToArray());
+        //            break;
+        //        case 2:
+        //            cmbUniTempConver.Items.Clear();
+        //            cmbUniTempConver.DataSource = Enum.GetValues(typeof(ElegirKelvin));
+        //            //cmbUniTempConver.Items.AddRange(Enum.GetValues(typeof(ElegirKelvin)).Cast<object>().ToArray());
+        //            break;
+        //    }
+        //}
     }
 }

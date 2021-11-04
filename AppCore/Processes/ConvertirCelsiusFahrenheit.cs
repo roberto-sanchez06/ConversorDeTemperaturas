@@ -9,7 +9,7 @@ namespace AppCore.Processes
     {
         public decimal ConvertirTemperatura(decimal temperatura)
         {
-            return (9 / 5) * temperatura + 32;
+            return ((9*temperatura)/5) + 32;
         }
     }
 }

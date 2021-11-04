@@ -24,3 +24,15 @@ C:\Users\larry\Desktop\ptosExtra\ConversorDeTemperaturas\AppCore\obj\Debug\netst
 C:\Users\larry\Desktop\ptosExtra\ConversorDeTemperaturas\AppCore\obj\Debug\netstandard2.0\AppCore.csproj.CopyComplete
 C:\Users\larry\Desktop\ptosExtra\ConversorDeTemperaturas\AppCore\obj\Debug\netstandard2.0\AppCore.dll
 C:\Users\larry\Desktop\ptosExtra\ConversorDeTemperaturas\AppCore\obj\Debug\netstandard2.0\AppCore.pdb
+C:\Users\Roberto\Desktop\ClasePracticaTemperatuaClonado\ConversorDeTemperaturas\AppCore\bin\Debug\netstandard2.0\AppCore.deps.json
+C:\Users\Roberto\Desktop\ClasePracticaTemperatuaClonado\ConversorDeTemperaturas\AppCore\bin\Debug\netstandard2.0\AppCore.dll
+C:\Users\Roberto\Desktop\ClasePracticaTemperatuaClonado\ConversorDeTemperaturas\AppCore\bin\Debug\netstandard2.0\AppCore.pdb
+C:\Users\Roberto\Desktop\ClasePracticaTemperatuaClonado\ConversorDeTemperaturas\AppCore\bin\Debug\netstandard2.0\Domain.dll
+C:\Users\Roberto\Desktop\ClasePracticaTemperatuaClonado\ConversorDeTemperaturas\AppCore\bin\Debug\netstandard2.0\Domain.pdb
+C:\Users\Roberto\Desktop\ClasePracticaTemperatuaClonado\ConversorDeTemperaturas\AppCore\obj\Debug\netstandard2.0\AppCore.csproj.AssemblyReference.cache
+C:\Users\Roberto\Desktop\ClasePracticaTemperatuaClonado\ConversorDeTemperaturas\AppCore\obj\Debug\netstandard2.0\AppCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roberto\Desktop\ClasePracticaTemperatuaClonado\ConversorDeTemperaturas\AppCore\obj\Debug\netstandard2.0\AppCore.AssemblyInfoInputs.cache
+C:\Users\Roberto\Desktop\ClasePracticaTemperatuaClonado\ConversorDeTemperaturas\AppCore\obj\Debug\netstandard2.0\AppCore.AssemblyInfo.cs
+C:\Users\Roberto\Desktop\ClasePracticaTemperatuaClonado\ConversorDeTemperaturas\AppCore\obj\Debug\netstandard2.0\AppCore.csproj.CoreCompileInputs.cache
+C:\Users\Roberto\Desktop\ClasePracticaTemperatuaClonado\ConversorDeTemperaturas\AppCore\obj\Debug\netstandard2.0\AppCore.dll
+C:\Users\Roberto\Desktop\ClasePracticaTemperatuaClonado\ConversorDeTemperaturas\AppCore\obj\Debug\netstandard2.0\AppCore.pdb

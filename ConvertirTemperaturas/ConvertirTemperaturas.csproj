@@ -71,6 +71,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmDemos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDemos.Designer.cs">
+      <DependentUpon>FrmDemos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmHistorialTemperaturas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmDemos.resx">
+      <DependentUpon>FrmDemos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmHistorialTemperaturas.resx">
       <DependentUpon>FrmHistorialTemperaturas.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +108,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -127,6 +137,18 @@
       <Project>{0D6900A0-9536-4EDE-8B3C-F466D5698415}</Project>
       <Name>Infraestructure</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimazar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
