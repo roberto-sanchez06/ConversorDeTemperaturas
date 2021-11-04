@@ -30,11 +30,21 @@ namespace Infraestructure
 
         public ICollection<TemperaturaConversion> FindAll(Predicate<TemperaturaConversion> predicate)
         {
+            if (predicate is null)
+            {
+                throw new ArgumentNullException(nameof(predicate));
+            }
+
             return temperaturas.FindAll(predicate);
         }
 
         public TemperaturaConversion FindAny(Predicate<TemperaturaConversion> predicate)
         {
+            if (predicate is null)
+            {
+                throw new ArgumentNullException(nameof(predicate));
+            }
+
             return temperaturas.Find(predicate);
         }
 

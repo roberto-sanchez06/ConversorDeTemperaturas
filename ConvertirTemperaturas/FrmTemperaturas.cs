@@ -212,26 +212,6 @@ namespace ConvertirTemperaturas
             txtA.Text = string.Empty;
             txtDe.Text = string.Empty;
         }
-        //private void cmbUniTempOrigin_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    switch (cmbUniTempOrigin.SelectedIndex)
-        //    {
-        //        case 0:
-        //            cmbUniTempConver.Items.Clear();
-        //            cmbUniTempConver.DataSource = Enum.GetValues(typeof(ElegirCelsius));
-        //            //cmbUniTempConver.Items.AddRange(Enum.GetValues(typeof(ElegirCelsius)).Cast<object>().ToArray());
-        //            break;
-        //        case 1:
-        //            cmbUniTempConver.Items.Clear();
-        //            cmbUniTempConver.DataSource = Enum.GetValues(typeof(ElegirFarenheit));
-        //            //cmbUniTempConver.Items.AddRange(Enum.GetValues(typeof(ElegirFarenheit)).Cast<object>().ToArray());
-        //            break;
-        //        case 2:
-        //            cmbUniTempConver.Items.Clear();
-        //            cmbUniTempConver.DataSource = Enum.GetValues(typeof(ElegirKelvin));
-        //            //cmbUniTempConver.Items.AddRange(Enum.GetValues(typeof(ElegirKelvin)).Cast<object>().ToArray());
-        //            break;
-        //    }
-        //}
+       
     }
 }
