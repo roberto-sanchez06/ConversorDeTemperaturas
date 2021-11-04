@@ -42,6 +42,7 @@ namespace ConvertirTemperaturas
             this.lblCerrar = new System.Windows.Forms.Label();
             this.lblHistorial = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTittle = new System.Windows.Forms.Label();
             this.pbFlecha = new System.Windows.Forms.PictureBox();
             this.pbKelvin2 = new System.Windows.Forms.PictureBox();
             this.pbCelsius2 = new System.Windows.Forms.PictureBox();
@@ -52,12 +53,11 @@ namespace ConvertirTemperaturas
             this.pbLimpiar = new System.Windows.Forms.PictureBox();
             this.pbCerrar = new System.Windows.Forms.PictureBox();
             this.pbHistorial = new System.Windows.Forms.PictureBox();
+            this.pbIcon = new System.Windows.Forms.PictureBox();
             this.btnMini = new System.Windows.Forms.PictureBox();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMaxi = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.lblTittle = new System.Windows.Forms.Label();
-            this.pbIcon = new System.Windows.Forms.PictureBox();
             this.pnlAcciones.SuspendLayout();
             this.pnlHeader.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -71,11 +71,11 @@ namespace ConvertirTemperaturas
             ((System.ComponentModel.ISupportInitialize)(this.pbLimpiar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHistorial)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbUniTempOrigin
@@ -116,13 +116,13 @@ namespace ConvertirTemperaturas
             // lblEncabezado
             // 
             this.lblEncabezado.AutoSize = true;
-            this.lblEncabezado.Font = new System.Drawing.Font("Franklin Gothic Heavy", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEncabezado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblEncabezado.Location = new System.Drawing.Point(227, 77);
+            this.lblEncabezado.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEncabezado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.lblEncabezado.Location = new System.Drawing.Point(261, 89);
             this.lblEncabezado.Name = "lblEncabezado";
             this.lblEncabezado.Size = new System.Drawing.Size(363, 34);
             this.lblEncabezado.TabIndex = 0;
-            this.lblEncabezado.Text = "Conversor de temperaturas";
+            this.lblEncabezado.Text = "Ingrese la temperatura a convertir ";
             // 
             // txtDe
             // 
@@ -227,12 +227,24 @@ namespace ConvertirTemperaturas
             this.panel1.Size = new System.Drawing.Size(200, 435);
             this.panel1.TabIndex = 20;
             // 
+            // lblTittle
+            // 
+            this.lblTittle.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblTittle.AutoSize = true;
+            this.lblTittle.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTittle.ForeColor = System.Drawing.Color.White;
+            this.lblTittle.Location = new System.Drawing.Point(368, 7);
+            this.lblTittle.Name = "lblTittle";
+            this.lblTittle.Size = new System.Drawing.Size(171, 21);
+            this.lblTittle.TabIndex = 28;
+            this.lblTittle.Text = "Conversor de temperatura";
+            // 
             // pbFlecha
             // 
             this.pbFlecha.Image = global::ConvertirTemperaturas.Properties.Resources.flecha_hacia_abajo;
-            this.pbFlecha.Location = new System.Drawing.Point(674, 185);
+            this.pbFlecha.Location = new System.Drawing.Point(674, 174);
             this.pbFlecha.Name = "pbFlecha";
-            this.pbFlecha.Size = new System.Drawing.Size(73, 64);
+            this.pbFlecha.Size = new System.Drawing.Size(73, 96);
             this.pbFlecha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbFlecha.TabIndex = 27;
             this.pbFlecha.TabStop = false;
@@ -307,8 +319,8 @@ namespace ConvertirTemperaturas
             // pbLimpiar
             // 
             this.pbLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbLimpiar.Image = global::ConvertirTemperaturas.Properties.Resources.temperatura;
-            this.pbLimpiar.Location = new System.Drawing.Point(31, 61);
+            this.pbLimpiar.Image = global::ConvertirTemperaturas.Properties.Resources.brocha_de_pasteleria;
+            this.pbLimpiar.Location = new System.Drawing.Point(44, 61);
             this.pbLimpiar.Name = "pbLimpiar";
             this.pbLimpiar.Size = new System.Drawing.Size(106, 91);
             this.pbLimpiar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -339,6 +351,16 @@ namespace ConvertirTemperaturas
             this.pbHistorial.TabIndex = 15;
             this.pbHistorial.TabStop = false;
             this.pbHistorial.Click += new System.EventHandler(this.pbHistorial_Click);
+            // 
+            // pbIcon
+            // 
+            this.pbIcon.Image = global::ConvertirTemperaturas.Properties.Resources.temperatura;
+            this.pbIcon.Location = new System.Drawing.Point(12, 3);
+            this.pbIcon.Name = "pbIcon";
+            this.pbIcon.Size = new System.Drawing.Size(30, 30);
+            this.pbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbIcon.TabIndex = 28;
+            this.pbIcon.TabStop = false;
             // 
             // btnMini
             // 
@@ -393,28 +415,6 @@ namespace ConvertirTemperaturas
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // lblTittle
-            // 
-            this.lblTittle.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblTittle.AutoSize = true;
-            this.lblTittle.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTittle.ForeColor = System.Drawing.Color.White;
-            this.lblTittle.Location = new System.Drawing.Point(368, 7);
-            this.lblTittle.Name = "lblTittle";
-            this.lblTittle.Size = new System.Drawing.Size(171, 21);
-            this.lblTittle.TabIndex = 28;
-            this.lblTittle.Text = "Conversor de temperatura";
-            // 
-            // pbIcon
-            // 
-            this.pbIcon.Image = global::ConvertirTemperaturas.Properties.Resources.temperatura;
-            this.pbIcon.Location = new System.Drawing.Point(12, 3);
-            this.pbIcon.Name = "pbIcon";
-            this.pbIcon.Size = new System.Drawing.Size(30, 30);
-            this.pbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbIcon.TabIndex = 28;
-            this.pbIcon.TabStop = false;
-            // 
             // FrmTemperaturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -456,11 +456,11 @@ namespace ConvertirTemperaturas
             ((System.ComponentModel.ISupportInitialize)(this.pbLimpiar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHistorial)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMini)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

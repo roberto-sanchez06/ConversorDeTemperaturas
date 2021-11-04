@@ -23,8 +23,8 @@ namespace ConvertirTemperaturas
 
         private void FrmDemos_Load(object sender, EventArgs e)
         {
-            //dtgHistorial.ReadOnly = true;
-            //dtgHistorial.DataSource = temperaturaService.FindAll();
+            dtgHistorial.ReadOnly = true;
+            dtgHistorial.DataSource = temperaturaService.FindAll();
             //foreach(TemperaturaConversion temp in temperaturaService.FindAll())
             //{
             //    dtgHistorial.Rows.Add(temp.Id, temp.GradosTemperaturaOrigen,temp.UnidadTemperaturaOrigen, temp.GradosTemperaturaConvertida, temp.UnidadTemperaturaConvertida);
